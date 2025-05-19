@@ -17,6 +17,11 @@ namespace DiaryApp.Controllers
 
             return View(objDiaryEntries);
         }
+
+        public IActionResult Create()
+        {
+            return View();
+        } 
     }
 }
  
