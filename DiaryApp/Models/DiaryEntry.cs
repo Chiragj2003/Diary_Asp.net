@@ -4,15 +4,17 @@ namespace DiaryApp.Models
 {
     public class DiaryEntry
     {
-        //[Key]                 
+        [Key]
         public int Id { get; set; }
-        [Required]
-        public string Title { get; set; } = string.Empty;
-        [Required]
-        public string Content { get; set; } = string.Empty ;
-        [Required]
-        public DateTime Created { get; set; } = DateTime.Now;
 
+        [Required]
+        public required string Title { get; set; }
+
+        [Required]
+        public required string Content { get; set; }
+
+        [Required]
+        public DateTime Created { get; set; }
     }
+
 }
-   
