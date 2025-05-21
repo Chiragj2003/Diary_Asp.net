@@ -7,7 +7,8 @@ namespace DiaryApp.Models
         [Key]
         public int Id { get; set; }
 
-        [Required]
+        [Required(ErrorMessage ="Please Enter a TItle!!")]
+        [StringLength(100,MinimumLength =3 ,ErrorMessage = "Title must be between 3 and 100 characters.")]
         public required string Title { get; set; }
 
         [Required]
@@ -16,5 +17,4 @@ namespace DiaryApp.Models
         [Required]
         public DateTime Created { get; set; }
     }
-
 }
