@@ -27,5 +27,3 @@ DiaryApp is a simple ASP.NET Core MVC web application that allows users to creat
 
 ---
 
-## 📂 Project Structure
-
