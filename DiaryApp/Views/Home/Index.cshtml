@@ -1,12 +1,77 @@
-﻿
-@{
+﻿@{
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
+<!-- Custom Styles -->
+<style>
+    body {
+        background: linear-gradient(to right, #f5f7fa, #c3cfe2);
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .welcome-title {
+        font-weight: bold;
+        animation: fadeInUp 1s ease-in-out;
+    }
+
+    .action-buttons .btn {
+        margin: 0.5rem;
+        padding: 0.75rem 1.5rem;
+    }
+
+    .quote-box {
+        font-style: italic;
+        color: #555;
+        margin-top: 2rem;
+    }
+
+    @@keyframes fadeInUp {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+</style>
+
+<!-- Main Content -->
+<div class="container text-center mt-5">
+    <h1 class="display-4 welcome-title">
+        <i class="fas fa-book-open"></i> Welcome to Your Diary
+    </h1>
+    <p class="lead">Capture your thoughts. Reflect on your journey. Grow with every word.</p>
+
+    <div class="action-buttons mt-4">
+        <a href="/DiaryEnteries/Create" class="btn btn-primary btn-lg">
+            <i class="fas fa-pen"></i> New Entry
+        </a>
+        <a href="/DiaryEnteries/Index" class="btn btn-outline-dark btn-lg">
+            <i class="fas fa-list"></i> View Entries
+        </a>
+    </div>
+
+    <div class="quote-box mt-5">
+        <blockquote>
+            <p>"Fill your paper with the breathings of your heart."</p>
+            <footer class="blockquote-footer">William Wordsworth</footer>
+        </blockquote>
+    </div>
+
+    <div class="card mt-4 shadow-sm mx-auto" style="max-width: 600px;">
+        <div class="card-body">
+            <h5 class="card-title"><i class="fas fa-clock"></i> Last Entry</h5>
+            <p class="card-text">"Started building my own digital diary today. It's simple but feels like a personal sanctuary."</p>
+        </div>
+    </div>
 </div>
 
 @section Scripts {
-    <script src="~/js/home.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script>
+        console.log("Home page loaded. Ready to write!");
+    </script>
 }

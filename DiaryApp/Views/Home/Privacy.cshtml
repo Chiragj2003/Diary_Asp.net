@@ -1,6 +1,61 @@
 ﻿@{
     ViewData["Title"] = "Privacy Policy";
 }
-<h1>@ViewData["Title"]</h1>
 
-<p>Use this page to detail your site's privacy policy.</p>
+<!-- Custom Styles (optional, consistent with home page) -->
+<style>
+    body {
+        background: #f9f9f9;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .privacy-container {
+        max-width: 800px;
+        margin: 50px auto;
+        background: white;
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+        margin-top: 2rem;
+    }
+
+    p {
+        line-height: 1.6;
+        color: #333;
+    }
+</style>
+
+<div class="privacy-container">
+    <h1>@ViewData["Title"]</h1>
+
+    <p>Your privacy is important to us. This privacy policy explains how we handle your data when you use our diary application.</p>
+
+    <h2>1. Information We Collect</h2>
+    <p>We collect personal information you voluntarily provide, such as your name and diary entries. These entries are stored securely and are never shared with third parties.</p>
+
+    <h2>2. How We Use Your Data</h2>
+    <p>Your data is used solely to provide and improve your diary experience. We do not use your entries for analytics, marketing, or any third-party services.</p>
+
+    <h2>3. Data Security</h2>
+    <p>We implement appropriate security measures to protect your data from unauthorized access. Your diary is private and encrypted at rest.</p>
+
+    <h2>4. Cookies</h2>
+    <p>This site may use cookies for session management and user authentication. You can disable cookies in your browser, but this may limit functionality.</p>
+
+    <h2>5. Your Rights</h2>
+    <p>You have the right to access, modify, or delete your personal information at any time. Contact support for help with data requests.</p>
+
+    <h2>6. Changes to This Policy</h2>
+    <p>We may update this privacy policy from time to time. Any changes will be posted on this page with an updated revision date.</p>
+
+    <p class="mt-4 text-muted"><small>Last updated: May 22, 2025</small></p>
+</div>
